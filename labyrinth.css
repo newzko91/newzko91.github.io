@@ -1,0 +1,48 @@
+#paramsContainer {
+    padding: 5px;
+    width: 290px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#resultContainer {
+    display: none;
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#resultContainer p {
+    margin: 0px;
+    padding: 5px;
+}
+
+fieldset {
+    display: table;
+    border-radius: 3px;
+    padding: 5px 0px;
+    margin-bottom: 5px;
+}
+
+fieldset p {
+    display: table-row;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input {
+    text-align: right;
+    display: table-cell;
+    padding: 3px;
+}
+
+label {
+    display: table-cell;
+    font-size: .9em;
+    padding: 5px 3px;
+}
+
+#generateBtn {
+    width: 98%;
+}

@@ -1,7 +1,44 @@
 <!DOCTYPE html>
 <html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--
+    A simple visualization of the recursive back-tracker algorithm for generating
+    and wall-follower algorythm for solving
+
+    Thanks to Kuba for fueling my interest in mazes:
+    https://code.sololearn.com/cL8CKWRqS2XN/#py
+    -->
+    <title>Labirinth</title>
+    <script src="Labirinth.js" type="text/javascript"></script>
+    <link href="labyrinth.css", type="text/css" rel="stylesheet">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<div id="paramsContainer">
+    <strong>Labyrinth dimensions :</strong>
+    <fieldset>
+        <p>
+            <label for="labWidth">Width </label>
+            <input id="labWidth" type="number" min="2" value="10"/>
+        </p>
+        <p>
+            <label for="labHeight">Height </label>
+            <input id="labHeight" type="number" min="2" value="10">
+        </p>
+        <p>
+            <label for="cellWidth"> Cell width </label>
+            <input id="cellWidth" type="number" min="30" value="40"/>
+        </p>
+        <p>
+            <label for="cellHeight">Cell height </label>
+            <input id="cellHeight" type="number" min="30" value="40">
+        </p>
+    </fieldset>
+    <button id="generateBtn" onclick="btnClick()">Generate</button>
+</div>
+<div id="resultContainer">
+    <p id="instructions"></p>
+    <svg id="labyrinthContainer" style="stroke-width: 1px" onclick="canvasClick(event)"></svg>
+</div>
 </body>
 </html>
